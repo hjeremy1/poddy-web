@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d76966b6d190e9808b5f862e9cf089b2",
+    "revision": "77bd3590ddba75ba3fabb70b1c8413a6",
     "url": "/poddy-web/index.html"
   },
   {
