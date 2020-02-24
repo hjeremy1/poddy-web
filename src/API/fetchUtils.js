@@ -11,6 +11,9 @@ export const searchPodcast = query => (
     params: {
       entity:"podcast",
       term: query
+    },
+    headers:{
+      'Access-Control-Allow-Origin': '*'
     }
   })
 );

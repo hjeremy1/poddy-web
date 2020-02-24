@@ -13,10 +13,10 @@ const parser = new Parser({
 });
 
 export const parseTrackLinks = async feedUrl => {
-  console.log(feedUrl);
+  //console.log(feedUrl);
   const feed = await parser.parseURL(getProxyURL(feedUrl));
   const tracks = [];
-  console.log(feed.items);
+  //console.log(feed.items);
   feed.items.map(item => {
     item.enclosure 
     && tracks.push({
