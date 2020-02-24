@@ -1,0 +1,7 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "semi": "error",
+        "indent": ["warn", 2]
+    }
+}

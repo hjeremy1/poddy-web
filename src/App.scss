@@ -1,0 +1,40 @@
+.App{
+  min-height: 100vh;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.header{
+  padding: 3rem;
+  text-align: center;
+  background: #423d3c;
+  color: rgb(224, 70, 70);
+  font-size: 3rem;
+  font-family: 'Lily Script One', ;
+
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button{
+  background: rgb(163, 56, 56);
+  border: none;
+  padding: 10px 20px;
+  color: white;
+}
+
+.podcasts{
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}

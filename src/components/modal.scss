@@ -1,0 +1,23 @@
+.modal-card-title{
+    justify-content: center;
+    flex-shrink: unset;
+}
+
+.modal-card-head{
+    background-color: #59575a;
+    .modal-card-title{
+        color:white;
+    }
+    .delete{
+        align-self: start;
+    }
+}
+
+.modal-card-body{
+    background-color: #59575a;
+}
+
+.modal-card-foot{
+    background-color: #59575a;
+}
+

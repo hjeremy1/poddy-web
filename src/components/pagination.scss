@@ -1,0 +1,19 @@
+#pageNumberList {
+    display: flex;
+    flex-direction: row;
+    li{
+        margin: 10px;
+    }
+}
+
+.pagination {
+    justify-content: center;
+}
+
+.button {
+    &.next, &.previous{
+        background-color: #b94141;
+        color:white;
+        min-width: 40%;
+    }
+}
