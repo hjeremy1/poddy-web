@@ -14,17 +14,23 @@ const parser = new Parser({
 });
 
 export const parseTrackLinks = async feedUrl => {
-  //console.log(feedUrl);
-  const feed = await parser.parseURL(getProxyURL(feedUrl));
-  const tracks = [];
-  //console.log(feed.items);
-  feed.items.map(item => {
-    item.enclosure 
-    && tracks.push({
-      title: item.title,
-      url: item.enclosure.url
+  try {
+    //console.log(feedUrl);
+    const feed = await parser.parseURL(getProxyURL(feedUrl));
+    const tracks = [];
+    //console.log(feed.items);
+    feed.items.map(item => {
+      item.enclosure 
+      && tracks.push({
+        title: item.title,
+        url: item.enclosure.url
+      });
     });
-  });
 
-  return tracks;
+    return tracks;
+  } catch (error) {
+    
+  }
+
+  return [];
 };

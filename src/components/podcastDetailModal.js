@@ -5,6 +5,7 @@ import { Track } from "./track";
 import "./podcastDetailModal.scss";
 import { splitEvery, set, length } from "ramda";
 import { Pagination } from "./pagination";
+import classNames from "classnames";
 
 export const PodcastDetailModal = ({title, onClose, image, feedUrl}) => {
 
@@ -65,6 +66,10 @@ export const PodcastDetailModal = ({title, onClose, image, feedUrl}) => {
     onClose();
   };
   
+  const noTracksFound = () => (
+    length(tracks) === 0
+  );
+
   return(
     <ModalWrapper>
       <ModalHeader
@@ -76,6 +81,9 @@ export const PodcastDetailModal = ({title, onClose, image, feedUrl}) => {
         <div className = "image">
           <img src = {image} alt = ""/>
         </div>
+        {noTracksFound() 
+        && !loading 
+        && <div className="no-tracks">NO TRACKS FOUND</div>}
         {activeTracks && activeTracks.map(track => (
           <Track
             title={track.title}
