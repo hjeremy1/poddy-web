@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/poddy-web/static/css/main.29344b91.chunk.css",
-    "main.js": "/poddy-web/static/js/main.1ba5f988.chunk.js",
-    "main.js.map": "/poddy-web/static/js/main.1ba5f988.chunk.js.map",
+    "main.js": "/poddy-web/static/js/main.b877d053.chunk.js",
+    "main.js.map": "/poddy-web/static/js/main.b877d053.chunk.js.map",
     "runtime-main.js": "/poddy-web/static/js/runtime-main.e80ac9b8.js",
     "runtime-main.js.map": "/poddy-web/static/js/runtime-main.e80ac9b8.js.map",
     "static/css/2.70d9d258.chunk.css": "/poddy-web/static/css/2.70d9d258.chunk.css",
     "static/js/2.1fd64ada.chunk.js": "/poddy-web/static/js/2.1fd64ada.chunk.js",
     "static/js/2.1fd64ada.chunk.js.map": "/poddy-web/static/js/2.1fd64ada.chunk.js.map",
     "index.html": "/poddy-web/index.html",
-    "precache-manifest.6ffb2de8343c669282a9460536b697b0.js": "/poddy-web/precache-manifest.6ffb2de8343c669282a9460536b697b0.js",
+    "precache-manifest.307f16df2e1ebe21465f4952460dbad8.js": "/poddy-web/precache-manifest.307f16df2e1ebe21465f4952460dbad8.js",
     "service-worker.js": "/poddy-web/service-worker.js",
     "static/css/2.70d9d258.chunk.css.map": "/poddy-web/static/css/2.70d9d258.chunk.css.map",
     "static/css/main.29344b91.chunk.css.map": "/poddy-web/static/css/main.29344b91.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.70d9d258.chunk.css",
     "static/js/2.1fd64ada.chunk.js",
     "static/css/main.29344b91.chunk.css",
-    "static/js/main.1ba5f988.chunk.js"
+    "static/js/main.b877d053.chunk.js"
   ]
 }
