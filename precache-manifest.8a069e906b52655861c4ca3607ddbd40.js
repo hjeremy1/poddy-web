@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9569225234fc80cc81c6ffa2e599ac72",
+    "revision": "871e4953ec8688947e92a1bb17ffe5c1",
     "url": "/poddy-web/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/poddy-web/static/css/2.70d9d258.chunk.css"
   },
   {
-    "revision": "ee39ee16c11d4063ae18",
+    "revision": "41e4e6ff169bb519332e",
     "url": "/poddy-web/static/css/main.29344b91.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/poddy-web/static/js/2.bb01d161.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ee39ee16c11d4063ae18",
-    "url": "/poddy-web/static/js/main.8a0286cd.chunk.js"
+    "revision": "41e4e6ff169bb519332e",
+    "url": "/poddy-web/static/js/main.aaf9379c.chunk.js"
   },
   {
     "revision": "c05dedd4cf2f971df17a",
