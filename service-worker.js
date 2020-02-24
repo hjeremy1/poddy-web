@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/poddy-web/precache-manifest.ced535d120cc584176410cd1676ef6e6.js"
+  "/poddy-web/precache-manifest.b9c177bd62cdc5fe3416c16526b18ef3.js"
 );
 
 self.addEventListener('message', (event) => {
