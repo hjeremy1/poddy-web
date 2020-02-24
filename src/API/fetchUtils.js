@@ -13,7 +13,7 @@ export const searchPodcast = query => (
       term: query
     },
     headers:{
-      'Access-Control-Allow-Origin': '*'
+      'access-control-allow-origin': '*'
     }
   })
 );

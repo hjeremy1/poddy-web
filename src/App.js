@@ -11,12 +11,6 @@ import { Pagination } from './components/pagination';
 library.add(fas);
 const App = () => {
 
-  const APP_ID = "ac943431";
-  const API_KEY = "dbce69a030523e371788b46e136a5d31";
-  const baseUrl = "https://api.edamam.com/";
-  const apiSearch = "search";
-
-  const [recipes, setRecipes] = useState([]);
   const [podcasts, setPodcasts] = useState([]);
   const [pagePodcasts, setPagePodcasts] = useState([]);
   const [search, setSearch] = useState("");
@@ -41,10 +35,10 @@ const App = () => {
   };
 
   const getPodcasts = async () => {
-    console.log("Getting podcasts");
+    //console.log("Getting podcasts");
     searchPodcast(query)
       .then(response => {
-        console.log(response.data.results);
+        //console.log(response.data.results);
         setPodcasts(splitEvery(10, response.data.results));
       });
   };
