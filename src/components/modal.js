@@ -28,10 +28,11 @@ export const ModalWrapper = ({children}) => (
   </div>
 );
 
-export const ModalHeader = ({title, onCancel}) => (
+export const ModalHeader = ({title, onCancel, children}) => (
   <header className="modal-card-head">
     <p className="modal-card-title">{title}</p>
     <button className="delete" aria-label="close" onClick={onCancel}></button>
+    {children}
   </header>
 );
 

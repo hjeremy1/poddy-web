@@ -13,9 +13,12 @@ export const PodcastDetailModal = ({title, onClose, image, feedUrl}) => {
   const[page, setPage] = useState(0);
   const[currentTrack, setCurrentTrack] = useState("");
   const[currentAudioTrack, setCurrentAudioTrack] = useState(null);
+  const[loading, setLoading] = useState(false);
 
   const getTracks = async feedUrl => {
+    setLoading(true);
     setTracks(splitEvery(10, await parseTrackLinks(feedUrl)));
+    setLoading(false);
   };
 
   useEffect(() => {
@@ -68,6 +71,7 @@ export const PodcastDetailModal = ({title, onClose, image, feedUrl}) => {
         title = {title}
         onCancel = {closeModal}
       />
+      {loading && <button className="button is-loading">LOADING</button> }
       <ModalBody>
         <div className = "image">
           <img src = {image} alt = ""/>

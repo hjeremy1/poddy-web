@@ -7,6 +7,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { splitEvery, length } from 'ramda';
 import { Pagination } from './components/pagination';
+import classNames from "classnames";
 
 library.add(fas);
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState('soccer');
   const [page, setPage] = useState(0);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     getPodcasts();
@@ -36,10 +38,12 @@ const App = () => {
 
   const getPodcasts = async () => {
     //console.log("Getting podcasts");
+    setLoading(true);
     searchPodcast(query)
       .then(response => {
         //console.log(response.data.results);
         setPodcasts(splitEvery(10, response.data.results));
+        setLoading(false);
       });
   };
 
@@ -54,8 +58,8 @@ const App = () => {
         <h1>Poddy Web</h1>
       </div>
       <form onSubmit = {getSearch} className = "search-form">
-        <input placeholder="Enter keyword" type="text" className = "search-bar" value={search} onChange={updateSearch}/>
-        <button type="submit" className = "search-button">Search
+        <input placeholder="Enter keyword" type="text" className = "input search-bar" value={search} onChange={updateSearch}/>
+        <button type="submit" className = {classNames(["button search-button", {"is-loading":  loading}])}>Search
         </button>
       </form>
       <Pagination
