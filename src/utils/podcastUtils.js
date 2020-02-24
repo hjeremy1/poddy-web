@@ -4,7 +4,7 @@ const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 const CORS_ME = "https://cors-anywhere.herokuapp.com/";
 
 const getProxyURL = feedUrl => {
-  return `${CORS_ME}${feedUrl}`;
+  return `${CORS_PROXY}${feedUrl}`;
 };
 
 const parser = new Parser({
