@@ -1,9 +1,10 @@
 import Parser from "rss-parser";
 
 const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
+const CORS_ME = "https://cors-anywhere.herokuapp.com/";
 
 const getProxyURL = feedUrl => {
-  return `${CORS_PROXY}${feedUrl}`;
+  return `${CORS_ME}${feedUrl}`;
 };
 
 const parser = new Parser({
